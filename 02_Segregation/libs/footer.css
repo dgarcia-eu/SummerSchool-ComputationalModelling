@@ -1,0 +1,52 @@
+div.my-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+div.my-footer span {
+    font-size: 10pt;
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+} 
+
+:root {
+  /* Fonts */
+  --text-font-family: Arial;
+  --text-font-is-google: 1;
+  --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
+  --text-font-base: sans-serif;
+  --header-font-family: Arial;
+  --header-font-is-google: 1;
+  --header-font-family-fallback: Georgia, serif;
+  --code-font-family: 'Fira Mono';
+  --code-font-is-google: 1;
+  --base-font-size: 20px;
+  --text-font-size: 1.5rem;
+  --code-font-size: 0.9rem;
+  --code-inline-font-size: 1em;
+  --header-h1-font-size: 2.75rem;
+  --header-h2-font-size: 2.25rem;
+  --header-h3-font-size: 1.75rem;
+
+  /* Colors */
+  --text-color: #272822;
+  --header-color: #507c5c;
+  --background-color: #FFFFFF;
+  --link-color: #507c5c;
+  --text-bold-color: #507c5c;
+  --code-highlight-color: rgba(255,255,0,0.5);
+  --inverse-text-color: #FFFFFF;
+  --inverse-background-color: #305c3c;
+  --inverse-header-color: #FFFFFF;
+  --inverse-link-color: #507c5c;
+  --title-slide-background-color:  #305c3c;
+  --title-slide-text-color: #FFFFFF;
+  --header-background-color: #507c5c;
+  --header-background-text-color: #FFFFFF;
+  --base: #5c5c5c;
+  --white: #FFFFFF;
+  --black: #272822;
+}
