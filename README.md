@@ -1,6 +1,6 @@
 
 
-### Basics of agent-based modelling: the micro-macro gap
+## Basics of agent-based modelling: the micro-macro gap
 
 **Recommended Readings:**
 
@@ -13,7 +13,7 @@
 - [From factors to actors: Computational Sociology and Agent-Based Modeling. Michael  Macy and Robert Willer. Annual Review of Sociology, 2002.](https://www.annualreviews.org/doi/abs/10.1146/annurev.soc.28.110601.141117)
 
 
-### Modelling segregation: Schelling's model
+## Modelling segregation: Schelling's model
 
 **Readings:**
 
@@ -26,7 +26,17 @@
 - [The Schelling Model of Ethnic Residential Dynamics: Beyond the Integrated - Segregated Dichotomy of Patterns. Erez Hatnaa and Itzhak Benenson. Journal of Artificial Societies and Social Simulation, 2012](https://www.jasss.org/15/1/6.html)
 
 
-### Modelling cultures
+## Collective action: Granovetter's threshold model
+
+**Readings:**
+
+- [Threshold Models of Collective Behavior. Mark Granovetter. American Journal of Sociology (1978)](https://www.jstor.org/stable/2778111)
+
+**Additional readings:**
+
+- [The dynamics of emotions in online interaction. David Garcia, Arvid Kappas, Dennis Küster and Frank Schweitzer. Royal Society Open Science (2016)](https://royalsocietypublishing.org/doi/10.1098/rsos.160059)
+
+## Modelling cultures
 
 **Readings:**
 
@@ -37,18 +47,8 @@
 - [Measuring cultural dynamics through the Eurovision song contest. David Garcia and Dorian Tanase. Advances in Complex Systems, 16 (2013)](https://www.worldscientific.com/doi/abs/10.1142/S0219525913500379)
 
 
-### Basics of spreading: Granovetter's threshold model
 
-**Readings:**
-
-- [Threshold Models of Collective Behavior. Mark Granovetter. American Journal of Sociology (1978)](https://www.jstor.org/stable/2778111)
-
-**Additional readings:**
-
-- [The dynamics of emotions in online interaction. David Garcia, Arvid Kappas, Dennis Küster and Frank Schweitzer. Royal Society Open Science (2016)](https://royalsocietypublishing.org/doi/10.1098/rsos.160059)
-
-
-### Opinion Dynamics
+## Opinion Dynamics
 
 **Readings:**
 
