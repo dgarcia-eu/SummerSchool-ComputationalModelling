@@ -1,0 +1,112 @@
+---
+title: "Bounded Confidence Model"
+author: "Dr. David Garcia"
+output: html_document
+---
+
+
+# Tasks:
+
+1. Code the simulation
+
+2. Encapsulate in a function and test with known setups
+
+3. Analyze the role of tolerance
+
+4. Study one-sided splits
+
+# 1. Code the simulation function
+
+First set the basic parameters of the model: 100 agents, convergence of 0.1, and tolerance of 0.3. Initialize a vector of agent opinions uniformly distributed between 0 and 1. Set a convergence threshold of 0.01, which will tell when the simulation is over.
+
+```{r initialize}
+N <- 100
+zeta <- 0.1
+epsilon <- 0.3
+convergence <- 0.01
+
+opinion <- runif(n=N, min=0, max=1) 
+```
+
+Code one interaction of the model: choose two different agents at random, decide if they are close enough, and adapt their opinions accordingly. Run this a few times to see when they approach each other if they get close enough.
+
+```{r oneIter}
+# Your code here
+```
+
+Now code the main loop of the simulation. In each iteration, do N random pair draws, updating the opinions after each pair interacts. Track the total change whenever there is an update and check the total change in the N updates of the iteration. If that is below the convergence threshold, finish the simulation. Store the values of opinions after the N updates in a data frame.
+
+```{r oneSim}
+# Your code here
+```
+
+Plot the trajectories of opinions in the simulation. Do they reach consensus?
+
+```{r firstSim}
+# Your code here
+```
+
+
+# 2. Encapsulate in a function and test with known setups
+
+Encapsulate the code of your simulation in a function that receives the parameters of the simulation. Make the function return the trajectories of agents as a result.
+
+```{r BCModel}
+# Your code here
+```
+
+
+Now set epsilon to 0.25. Do you know in advance what is going to happen?
+
+```{r secondSim}
+# Your code here
+```
+
+Now set sigma to 0.1. What is the difference between both simulations? Run a few times the simulation, do you always get the same number of groups?
+
+```{r thirdSim}
+# Your code here
+```
+
+# 3. Analyze the role of tolerance
+
+Code a function that takes a final vector of opinions and calculates the number of clusters. Knowing the value of epsilon and sorting the opinion vector, it is very easy to calculate the number of clusters.
+```{r NClusters}
+# Your code here
+```
+
+
+Test with some runs of the model that you get the right number of clusters.
+
+```{r NClustersTest}
+# Your code here
+```
+
+Now iterate over epsilon values between 0.05 and 0.5 by increases of 0.05 and simulate 50 simulations for each, counting the number of clusters after each simulation. Store the results in a data frame.
+
+```{r }
+# Your code here
+```
+
+
+Visualize the results with a scatter plot (use transparency for the points. Do they agree with your expectations?
+
+```{r boxplot}
+# Your code here
+```
+
+
+# 4. Study one-sided splits
+
+Adapt your code to make the model asymmetric, such that you have two tolerance thresholds: one for above and one for below.
+```{r AsymBC}
+# Your code here
+```
+
+
+
+Simulate the model with 200 agents and one tolerance being 0.2 and the other 0.1. Can you identify a one sided split?
+
+```{r AsymBCTest}
+# Your code here
+```
