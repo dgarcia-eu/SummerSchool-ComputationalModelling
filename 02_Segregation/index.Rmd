@@ -39,25 +39,120 @@ layout: true
 
 # Overview
 
-## 1. Segregation
+## 1. Cellular Automata: The game of life
 
-## 2. Schelling's segregation model
+## 2. Segregation
 
-## 3. Analyzing Schelling's model
+## 3. Schelling's segregation model
 
-## 4. Cellular Automata: The game of life
+## 4. Analyzing Schelling's model
+
+---
+
+
+# Cellular Automata: The game of life
+
+## *1. Cellular Automata: The game of life*
+
+## 2. Segregation
+
+## 3. Schelling's segregation model
+
+## 4. Analyzing Schelling's model
+
+---
+
+# Cellular Automata
+
+- agents $\equiv$ cells, arranged on a predefined lattice
+- formal structure of Cellular Automata
+  - finite or infinite grid of identical cells $i=1,...,L$
+  - cell with internal state $\theta_{i} (t) \in \{\theta_1,\dots, \theta_n \}$
+  - neighborhood configuration: $\beta_{i}(t)\in\{\beta_1,\ldots,\beta_m\}$ 
+  - discrete dynamics for the state variable at $t+1$ :
+    $$\theta_{i}(t+1)=\mathbf{F}\left[\underline{\theta}(t),\underline{\beta}(t)\right]$$
+- characteristics: 
+  - discrete space, time, and states
+  - same transition rule applies to all cells
+  - *each* cell is an agent (!)
+
+---
+
+
+# Cellspace and Neighbourhoods
+- Many types of neighbourhoods possible.
+- Examples in 2D:
+```{r, echo=FALSE, out.width=800, fig.align='center'}
+knitr::include_graphics("Figures/neigh.png")
+```
+- Finite cellspace L $\rightarrow$ border cells need different update rule
+  - option 1: mirror border cells 
+  - option 2: periodic boundary condition: A Torus
+- Not only squares, but also triangular, hexagonal and even irregular tilings possible (e.g. Voronoi tesselations)
+
+---
+
+# Conway's Game of Life
+
+- History
+  - **John Conway** (1970): design a self-replicating system 
+  - 2010: first self-replicating structure in *Life*, called *Gemini*
+  - 2013: first replicator that creates a bigger copy of itself (self-similarity)
+- Rules of the Game
+  - 2D rectangular infinite grid with "dead" and "alive" cells
+  - a dead cell becomes alive if 3 neighbours are alive - **reproduction**
+  - an alive cell dies if less than 2 neighbours are alive - **underpopulation**
+  - an alive cell dies if more than 3 neighbours  are alive - **overcrowding**
+- Importance of Conway's Game of Life
+  - complex behaviour emerges from simple rules for agents
+  - early modeling of self-organization
+
+To play the game: https://playgameoflife.com
+
+---
+
+#Simulating the Game of Life
+
+Dead cells are white, alive cells are black: 
+
+```{r, echo=FALSE, out.width=800, fig.align='center'}
+knitr::include_graphics("Figures/game-of-life.png")
+```
+
+
+---
+background-image: url(Figures/GolEx.svg)
+background-size: 98%
+#Evolution of structures
+
+- still lifes: static patterns (e.g. 'beehive')
+
+- oscillators: repeating patterns
+
+- spaceships: translating patterns (e.g. 'glider')
+
+- guns: stationary patterns which emit spaceships
+
+- puffers: translating patterns which leave a trail of debris behind
+
+- the Gemini replicator: http://youtu.be/A8B5MbHPlH0
+ 
+A whole library of structures is available at https://playgameoflife.com/lexicon
+
+You can even setup Game of Life in the Game of life: http://youtu.be/xP5-iIeKXE8
 
 ---
 
 # Segregation
 
-## *1. Segregation*
+## 1. Cellular Automata: The game of life
 
-## 2. Schelling's segregation model
+## *2. Segregation*
 
-## 3. Analyzing Schelling's model
+## 3. Schelling's segregation model
 
-## 4. Cellular Automata: The game of life
+## 4. Analyzing Schelling's model
+
 
 
 ---
@@ -82,62 +177,6 @@ knitr::include_graphics("Figures/DC.png")
 
 ---
 
-## Segregation example: Yaffo, Israel
-
-.pull-left[
-```{r, echo=FALSE, out.width=430, fig.align='center'}
-knitr::include_graphics("Figures/Jaffo.png")
-```
-]
-
-.pull-right[
-
-- Neighborhood units with shares of ethnic groups as pie charts
-
-- Share of Jewish, Muslim, and Christian inhabitants
-
-- Segregation: Jewish vs non-jewish areas
-
-- Observation: some areas are less segregated (area C)
-
-
-[Hatna & Benenson. JASSS, 2012](https://www.jasss.org/15/1/6.html)
-
-
-]
-
----
-
-# Residential segregation persistence
-
-```{r, echo=FALSE, out.width=800, fig.align='center'}
-knitr::include_graphics("Figures/SegTrend.png")
-```
-
-[The Great Real Estate Reset. Loh, Coes, & Buthe, 2020](https://www.brookings.edu/essay/trend-1-separate-and-unequal-neighborhoods-are-sustaining-racial-and-economic-injustice-in-the-us/)
-
----
-
-# Increasing income segregation
-
-```{r, echo=FALSE, out.width=650, fig.align='center'}
-knitr::include_graphics("Figures/Pew.png")
-```
-
-[The Rise of Residential Segregation by Income. Pew Research Center.](https://www.pewresearch.org/social-trends/2012/08/01/the-rise-of-residential-segregation-by-income/)
-
----
-
-# ZIP code at birth predicts life outcomes
-
-```{r, echo=FALSE, out.width=900, fig.align='center'}
-knitr::include_graphics("Figures/ZIP.png")
-```
-
-https://www.opportunityatlas.org/
-
----
-
 ## Questions about the origin of segregation
 
 - Top-down segregation: Discriminatory policies
@@ -155,13 +194,13 @@ https://www.opportunityatlas.org/
 
 # Schelling's segregation model
 
-## 1. Segregation
+## 1. Cellular Automata: The game of life
 
-## *2. Schelling's segregation model*
+## 2. Segregation
 
-## 3. Analyzing Schelling's model
+## *3. Schelling's segregation model*
 
-## 4. Cellular Automata: The game of life
+## 4. Analyzing Schelling's model
 
 ---
 
@@ -441,17 +480,15 @@ knitr::include_graphics("Figures/40.png")
 
 ---
 
-
-
 # Analyzing Schelling's model
 
-## 1. Segregation
+## 1. Cellular Automata: The game of life
 
-## 2. Schelling's segregation model
+## 2. Segregation
 
-## *3. Analyzing Schelling's model*
+## 3. Schelling's segregation model
 
-## 4. Cellular Automata: The game of life
+## *4. Analyzing Schelling's model*
 
 ---
 
@@ -470,218 +507,6 @@ $$\Large I = \frac{M \sum_i \sum_j w_{i,j} (x_i - \bar x) (x_j - \bar x)}{(\sum_
 - Also known as spatial autocorrelation
 ---
 
-# How to calculate Moran's I
-
-We rewrite I as $\Large I = \frac{M C}{W \sigma}$, where:
-
-$$C = \sum_i \sum_j w_{i,j} (x_i - \bar x) (x_j - \bar x)$$
-$$W = \sum_i \sum_j w_{i,j}$$
-
-$$\sigma =  \sum_i (x_i-\bar x)^2$$
-With a loop over the cells, we can iteratively calculate $C$, $W$, and $\sigma$
-
----
-
-# Moran's I example
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/Moran1.svg")
-```
-]
-
-.pull-right[
-- Example: 9 cells
-
-- 3x3 neighborhood
-
-- 4 red and 4 blue agents
-
-  - $x_i=0$ if i occupied by blue
-
-  - $x_i=1$ if i occupied by red
-
-  - $\bar x = 0.5$
-
-  - $M=8$
-]
-
----
-
-# Moran's I example
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/Moran2.svg")
-```
-]
-
-.pull-right[
-
-- First cell: blue  ( $x_1=0$ )
-
-- Contribution to $\sigma$:
-
-$$\sigma \leftarrow \sigma + (x_i-\bar x)^2 \leftarrow \sigma + (0-0.5)^2$$
-- Contribution to $W$: 2 neighbors
-
-$$W \leftarrow W + 2$$
-- Empty neighborhood cell doesn't count!
-
-]
-
----
-
-# Moran's I example
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/Moran3.svg")
-```
-]
-
-.pull-right[
-
-- First neighbor (cell 2):  
-contribution to C
-
-$$ C \leftarrow C + w_{1,2} (x_1 - \bar x) (x_2 - \bar x)$$
-
-- Because cells 1 and 2 are neighbors, $w_{1,2}=1$
-
-$$ C \leftarrow C + 1(0 - 0.5)(1 - 0.5) $$
-
-$$ C \leftarrow C - 0.25 $$
-- Different neighbors reduce $I$
-
-]
-
-
----
-
-
-# Moran's I example
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/Moran4.svg")
-```
-]
-
-.pull-right[
-
-- Second neighbor (cell 5)
-
-- Does not contribute to C because it is empty
-
-]
-
----
-
-
-# Moran's I example
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/Moran5.svg")
-```
-]
-
-.pull-right[
-
-- First neighbor (cell 4):  
-contribution to C
-
-$$ C \leftarrow C + w_{1,4} (x_1 - \bar x) (x_4 - \bar x)$$
-
-- Because cells 1 and 4 are neighbors, $w_{1,4}=1$
-
-$$ C \leftarrow C + 1(0 - 0.5)(0 - 0.5) $$
-
-$$ C \leftarrow C + 0.25 $$
-- Equal neighbors increase $I$
-
-]
-
----
-
-
-
-# Moran's I example
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/Moran6.svg")
-```
-]
-
-.pull-right[
-
-- Second cell: red  ( $x_2=1$ )
-
-- Contribution to $\sigma$ and W
-
-$$\sigma \leftarrow \sigma + (x_i-\bar x)^2 \leftarrow \sigma + (1-0.5)^2$$
-$$W \leftarrow W + 4$$
-- Four contributions to $C$:
-
-
-$$ C \leftarrow C + 0.25 + 0.25 - 0.25 -  0.25$$
-
-]
-
----
-
-
-# Moran's I example
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/Moran1.svg")
-```
-]
-
-.pull-right[
-
-$$M = 8$$
-$$C = 16*0.25-8*0.25=2$$
-$$W = 24$$
-
-$$\sigma = 0.25*8=2$$
-
-$$\Large I = \frac{M C}{W \sigma} = \frac{8*2}{24*2}=0.3$$
-
-
-
-
-]
-
----
-
-# Maximum Moran's I example
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/MoranMax.svg")
-```
-]
-
-.pull-right[
-
-$$M = 8$$
-$$C = 24*0.25=6$$
-$$W = 24$$
-
-$$\sigma = 0.25*8=2$$
-
-$$\Large I = \frac{M C}{W \sigma} = \frac{8*6}{24*2}=1$$
-
-
-
-
-]
-
----
 
 
 # Segregation versus tolerance
@@ -704,124 +529,6 @@ knitr::include_graphics("Figures/IvsF.png")
 - Substantial segregation for F>0.33
 
 ]
----
-
-# Generalizing relocation rules
-
-```{r, echo=FALSE, out.width=1000, fig.align='center'}
-knitr::include_graphics("Figures/Fs.png")
-```
-
-- Modeling the utility of an agent under with certain fraction of similar agents
-- Probability to relocate every iteration: 1 - utility
-- Happiness is measured as total utility
-
----
-
-## Coexistence between segregation and mixtures
-
-```{r, echo=FALSE, out.width=900, fig.align='center'}
-knitr::include_graphics("Figures/Mix.png")
-```
-
-- Generalization of model: different number of agents per color and different thresholds for each color
-- Model reproduces observed clusters of one group with mixed regions
-
-[The Schelling Model of Ethnic Residential Dynamics: Beyond the Integrated - Segregated Dichotomy of Patterns. Erez Hatna and Itzhak Benenson. Journal of Artificial Societies and Social Simulation, 2012](https://www.jasss.org/15/1/6.html)
-
-
----
-
-# Cellular Automata: The game of life
-
-## 1. Segregation
-
-## 2. Schelling's segregation model
-
-## 3. Analyzing Schelling's model
-
-## *4. Cellular Automata: The game of life*
-
----
-
-# Cellular Automata
-
-- agents $\equiv$ cells, arranged on a predefined lattice
-- formal structure of Cellular Automata
-  - finite or infinite grid of identical cells $i=1,...,L$
-  - cell with internal state $\theta_{i} (t) \in \{\theta_1,\dots, \theta_n \}$
-  - neighborhood configuration: $\beta_{i}(t)\in\{\beta_1,\ldots,\beta_m\}$ 
-  - discrete dynamics for the state variable at $t+1$ :
-    $$\theta_{i}(t+1)=\mathbf{F}\left[\underline{\theta}(t),\underline{\beta}(t)\right]$$
-- characteristics: 
-  - discrete space, time, and states
-  - same transition rule applies to all cells
-  - *each* cell is an agent (!)
-
----
-
-
-# Cellspace and Neighbourhoods
-- Many types of neighbourhoods possible.
-- Examples in 2D:
-```{r, echo=FALSE, out.width=800, fig.align='center'}
-knitr::include_graphics("Figures/neigh.png")
-```
-- Finite cellspace L $\rightarrow$ border cells need different update rule
-  - option 1: mirror border cells 
-  - option 2: periodic boundary condition: A Torus
-- Not only squares, but also triangular, hexagonal and even irregular tilings possible (e.g. Voronoi tesselations)
-
----
-
-# Conway's Game of Life
-
-- History
-  - **John Conway** (1970): design a self-replicating system 
-  - 2010: first self-replicating structure in *Life*, called *Gemini*
-  - 2013: first replicator that creates a bigger copy of itself (self-similarity)
-- Rules of the Game
-  - 2D rectangular infinite grid with "dead" and "alive" cells
-  - a dead cell becomes alive if 3 neighbours are alive - **reproduction**
-  - an alive cell dies if less than 2 neighbours are alive - **underpopulation**
-  - an alive cell dies if more than 3 neighbours  are alive - **overcrowding**
-- Importance of Conway's Game of Life
-  - complex behaviour emerges from simple rules for agents
-  - early modeling of self-organization
-
-To play the game: https://playgameoflife.com
-
----
-
-#Simulating the Game of Life
-
-Dead cells are white, alive cells are black: 
-
-```{r, echo=FALSE, out.width=800, fig.align='center'}
-knitr::include_graphics("Figures/game-of-life.png")
-```
-
-
----
-background-image: url(Figures/GolEx.svg)
-background-size: 98%
-#Evolution of structures
-
-- still lifes: static patterns (e.g. 'beehive')
-
-- oscillators: repeating patterns
-
-- spaceships: translating patterns (e.g. 'glider')
-
-- guns: stationary patterns which emit spaceships
-
-- puffers: translating patterns which leave a trail of debris behind
-
-- the Gemini replicator: http://youtu.be/A8B5MbHPlH0
- 
-A whole library of structures is available at https://playgameoflife.com/lexicon
-
-You can even setup Game of Life in the Game of life: http://youtu.be/xP5-iIeKXE8
 
 ---
 
@@ -839,7 +546,6 @@ You can even setup Game of Life in the Game of life: http://youtu.be/xP5-iIeKXE8
 [(Gardner, 1970)](https://web.stanford.edu/class/sts145/Library/life.pdf)
 
 
-
 ---
 
 # Quiz
@@ -848,14 +554,10 @@ You can even setup Game of Life in the Game of life: http://youtu.be/xP5-iIeKXE8
 
 - What other contexts can have segregation besides the residential case?
 
-- With F=0.35 and 8x8, is there a possible state in which 60 agents are happy?
-
 - What are the simplifications of Schelling's model?
 
 - How can we take into account weaker correlations at distance larger than 1 in Moran's I?
 
 - How is Schelling's model different to the formulation of cellular automata?
-
-- Do you know any other cellular automata besides the game of life?
 
 
