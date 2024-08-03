@@ -1,0 +1,134 @@
+---
+title: "Granovetter's threshold model"
+author: "Dr. David Garcia"
+output: html_document
+---
+
+
+# Tasks:
+
+1. Code the simulation
+
+2. Encapsulate in a function and test with known setups
+
+3. Analyze the role of diversity
+
+4. Probe the parameter space
+
+# 1. Code the simulation function
+
+First set the basic parameters of the model (size and parameters of threshold distribution), a vector with the sampled thresholds of agents, and a vector of agent states all starting as inactive. To start working with the model, I recommend 10000 agents and a threshold distribution with mean 0.25 and standard deviation of 0.1.
+
+```{r initialize}
+N <- 10000
+mu <- 0.25
+sigma <- 0.1
+
+threshold <- rnorm(n=N, mean=mu, sd=sigma)
+state <- vector(length=N) # vectors in R are filled with FALSE by default
+```
+
+Code one iteration of the model: Iterate over the agents to see if they become active.
+
+```{r oneIter}
+# Your code here
+```
+
+How many became active? What are the agents that become active in the first step of the simulation?
+
+```{r initActive}
+# Your code here
+```
+
+Now code the main loop of the simulation. Track if any changes happen to the vector of states in every iteration and stop the simulation when no more changes take place. How many agents activated by the end of the simulation?
+
+```{r oneSim}
+# Your code here
+```
+
+Did the number of active agents increase compared to the first iteration? 
+
+
+Plot the distribution of thresholds of all agents and of active agents. What is the highest threshold of active agents?
+
+```{r thresholds}
+# Your code here
+```
+
+
+# 2. Encapsulate in a function and test with known setups
+
+Encapsulate the code of your simulation in a function that receives the parameters of the simulation. In each iteration of the simulation, record the current number of active agents in a vector and return the full vector.
+
+```{r thresholdModel}
+# Your code here
+```
+
+Run your function for the same settings as above and plot the trajectory of the number of active agents
+
+```{r firstSim}
+# Your code here
+```
+
+Run 100 simulations and plot their trajectories with shaded lines. What causes the variance?
+```{r Sim100}
+# Your code here
+```
+
+Now set sigma to 0.12. Do you know in advance what is going to happen?
+
+```{r secondSIm}
+# Your code here
+```
+
+Now set sigma to 0.13. What is the difference between both simulations?
+
+```{r thirdSim}
+# Your code here
+```
+
+As above, run 100 simulations and plot their trajectories with shaded lines. What new differences do you notice?
+```{r thirdSim100}
+# Your code here
+```
+
+Now set sigma to 0.6. What is your expectation of the final number of active agents?
+
+```{r fourthSim}
+# Your code here
+```
+
+Plot the distribution of thresholds with mu=0.25 and sigma=0.6. Does that explain the above outcome?
+
+```{r fourthSimDist}
+# Your code here
+```
+
+
+# 3. Analyze the role of diversity
+
+Write a loop for values going from sigma=0 to sigma=1 by increases of 0.1 and simulate 100 runs of the threshold model for each sigma value. Keep N=1000 and mu=0.25 for all simulations. Save the result of each simulation in a data frame with a column for the sigma and another for the final number of active agents.
+
+```{r sigmaAnalysis}
+# Your code here
+```
+
+Plot the resulting values of the final number of agents versus sigma. Do you observe the same phenomenon as Grannovetter?
+```{r transitionPlot}
+# Your code here
+```
+
+Repeat the analysis above but for values of sigma between 0.1 and 0.15 by increases of 0.005. How sharp is the jump?
+
+```{r transitionZoom}
+# Your code here
+```
+
+# 4. Probe the parameter space
+
+Now simulate with nested loops, so you simulate all combinations of mu from 0 to 0.4 by 0.01 and of sigma from 0 to 0.3 by 0.01. Simulate 100 times per combination of values and save the mean number of active agents at the end of the simulation. The visualize this as a heatmap.
+
+```{r probeHeatmap}
+# Your code here
+```
+
