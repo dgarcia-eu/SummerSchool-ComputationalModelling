@@ -2,6 +2,8 @@
 
 ## Basics of agent-based modelling: the micro-macro gap
 
+[[Slides]](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/01_Introduction/)
+
 **Recommended Readings:**
 
 - [Agent-Based Modeling: A New Approach for Theory Building in Social Psychology. Eliot Smith and Frederica Conrey. Personality and Social Psychology Review, 2007.](https://journals.sagepub.com/doi/abs/10.1177/1088868306294789)
@@ -12,8 +14,9 @@
 - [Causal Mechanisms in the Social Sciences. Peter Hedström and Petri Ylikoski. Annual Review of Sociology, 2010.](https://www.annualreviews.org/doi/abs/10.1146/annurev.soc.012809.102632)
 - [From factors to actors: Computational Sociology and Agent-Based Modeling. Michael  Macy and Robert Willer. Annual Review of Sociology, 2002.](https://www.annualreviews.org/doi/abs/10.1146/annurev.soc.28.110601.141117)
 
-
 ## Modelling segregation: Schelling's model
+
+[[Slides]](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/02_Segregation)
 
 **Readings:**
 
@@ -28,6 +31,8 @@
 
 ## Collective action: Granovetter's threshold model
 
+[[Slides]](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/03_CollectiveAction)
+
 **Readings:**
 
 - [Threshold Models of Collective Behavior. Mark Granovetter. American Journal of Sociology (1978)](https://www.jstor.org/stable/2778111)
@@ -36,7 +41,15 @@
 
 - [The dynamics of emotions in online interaction. David Garcia, Arvid Kappas, Dennis Küster and Frank Schweitzer. Royal Society Open Science (2016)](https://royalsocietypublishing.org/doi/10.1098/rsos.160059)
 
+**Exercise on Granovetter's model:**
+
+- [Assginment in web](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/10_Exercise_Granovetter/10_Granovetter.html)
+- [Assginment in R markdown](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/10_Exercise_Granovetter/10_Granovetter.Rmd)
+- [Version of the model and analysis in Python with Mesa](https://github.com/dgarcia-eu/ComputationalModellingSocialSystems/blob/main/Exercise_02_Granovetter/granovetter-example-solution.ipynb)
+
 ## Modelling cultures
+
+[[Slides]](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/04_Culture)
 
 **Readings:**
 
@@ -49,6 +62,8 @@
 
 
 ## Opinion Dynamics
+
+[[Slides]](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/05_OpinionDynamics)
 
 **Readings:**
 
