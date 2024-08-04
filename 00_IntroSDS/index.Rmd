@@ -118,19 +118,6 @@ Email: david.garcia@uni-konstanz.de
 
 ---
 
-# Politics on Social Media
-
-.center[![:scale 90%](figures/Politics.svg)]
-- <div style="font-size:17pt"><span>
-<a href="https://www.nature.com/articles/s41562-023-01691-w"> 
-From alternative conceptions of honesty to alternative facts in communications by US politicians. J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky. Nat. Human Behavior (2023) </a>
-</span></div>  
-
-- <div style="font-size:17pt"><span>
-<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.82"> Ideological and Temporal Components of Network Polarization in Online Political Participatory Media. D. Garcia, A. Abisheva, S. Schweighofer, U. Serdült, F. Schweitzer. Policy & Internet (2015)</a>
-</span></div> 
-
----
 
 # Social Resilience of Online Communities
 
@@ -188,6 +175,21 @@ Collective aspects of privacy in the Twitter social network.David Garcia, Mansi 
 - <div style="font-size:18pt"><span>
 <a href="https://www.pnas.org/doi/10.1073/pnas.1717781115"> Analyzing gender inequality through large-scale Facebook advertising data. D. Garcia, Y. Kassa, A. Cuevas, M. Cebrian, E. Moro, I. Rahwan, R. Cuevas. PNAS (2018) </a>
 </span></div>  
+
+---
+
+
+# Politics on Social Media
+
+.center[![:scale 90%](figures/Politics.svg)]
+- <div style="font-size:17pt"><span>
+<a href="https://www.nature.com/articles/s41562-023-01691-w"> 
+From alternative conceptions of honesty to alternative facts in communications by US politicians. J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky. Nat. Human Behavior (2023) </a>
+</span></div>  
+
+- <div style="font-size:17pt"><span>
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.82"> Ideological and Temporal Components of Network Polarization in Online Political Participatory Media. D. Garcia, A. Abisheva, S. Schweighofer, U. Serdült, F. Schweitzer. Policy & Internet (2015)</a>
+</span></div> 
 
 ---
 
