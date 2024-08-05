@@ -1,0 +1,91 @@
+---
+title: "Schelling's Segregation Model"
+author: "David Garcia, 2024"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+# Tasks:
+
+1. Code the first simulation with reusable functions
+
+2. Code Moran's I and encapsulate simulation in a loop
+
+3. Analyze the role of tolerance
+
+
+# 1. Code the first simulation with reusable functions
+
+Initialize model settings (grid size, number of agents per color) and the tolerance parameter.  Also load (and install if necessary) a package for plotting matrices with colors, such as plot.matrix.
+```{r initialize}
+# install.packages("plot.matrix")
+library(plot.matrix)
+M = 20 #grid size
+N = 196 #number of agents of each color
+Tolerance = 0.5 #Tolerance threshold
+```
+
+Code a function to initialize the random locations of agents.
+```{r initializeLocations}
+initializeLocations <- function(M=20, N=196)
+{
+  #Your code here
+}
+```
+
+
+Code a function to find the neighboring cells of a cell with coordinates x and y. Consider coordinates in a torus using the modulo operator (%%).
+
+```{r neighbors}
+neighbors <- function(x,y)
+{
+  #Your code here
+}
+```
+
+Code a function to calculate the fraction of neighbors of a fixed color for all cells in the grid. If a cell has no neighbors of any color, initialize this fraction as NA.
+
+```{r neighborFractions}
+neighborFractions <- function(locs)
+{
+  #Your code here
+}
+```
+
+Using the functions you coded above, execute a run of Schelling's model. If you use a matrix plot function, add a small delay (e.g. 0.1 seconds) to the simulation so you can see the visualization. Run the simulation until no more changes take place when checking the happiness of all agents.
+
+```{r oneSim, eval=F}
+#Your code here
+```
+
+
+# 2. Code Moran's I and encapsulate simulation in a loop
+
+Code a function to calculate the spatial autocorrelation of a simulation with Moran's I.
+
+```{r MoransI}
+MoransI <- function(locations)
+{
+  #Your code here
+}
+```
+
+Encapsulate the code to make a simulation of Schelling's model into one function. Do not visualize anything, take only the threshold as a parameter and return the resulting Moran's I after no more changes take place.
+
+```{r Schelling}
+Schelling <- function(Tolerance)
+{
+ #Your code here
+}
+```
+
+# 3. Analyze the role of tolerance
+
+Run a loop iterating over thresholds between 0.05 and 0.55 with increments of 0.1. Run 10 simulations for each threshold and record the resulting Moran's I. Plot Moran's I as a function of tolerance threshold. How high is the threshold when segregation starts to increase drastically?
+
+```{r Analysis}
+ #Your code here
+```
+

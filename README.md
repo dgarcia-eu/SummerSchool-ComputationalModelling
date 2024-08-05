@@ -49,8 +49,18 @@
 - [Measuring cultural dynamics through the Eurovision song contest. David Garcia and Dorian Tanase. Advances in Complex Systems, 16 (2013)](https://www.worldscientific.com/doi/abs/10.1142/S0219525913500379)
 - [Tipping diffusivity in information accumulation systems: more links, less consensus. Jae K Shin and Jan Lorenz Journal of Statistical Mechanics: Theory and Experiment (2010)](https://iopscience.iop.org/article/10.1088/1742-5468/2010/06/P06005)
 
-# 5. Exercise: Opinion dynamics
+# 5. Exercise: Bounded Confidence
 
 - [**Assginment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/11_Exercise_BoundedConfidence/11_BoundedConfidence.html)
 - [**Assginment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/11_Exercise_BoundedConfidence/11_BoundedConfidence.Rmd)
 - [**Version of the model and analysis in Python with Mesa**](https://github.com/dgarcia-eu/ComputationalModellingSocialSystems-Solutions/blob/master/Exercise_03_BoundedConfidence/bounded-confidence-handout-solution.ipynb)
+
+# 6. Exercise: Information Accumulation Systems
+
+
+
+# 7. Exercise: Schelling's model
+
+- [**Assginment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/13_Exercise_Schelling/13_Schelling.html)
+- [**Assginment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/13_Exercise_Schelling/13_Schelling.Rmd)
+- [**Version of the model and analysis in Python with Mesa**](https://github.com/dgarcia-eu/ComputationalModellingSocialSystems/blob/main/Exercise_01_Schelling/schelling-example-solution.ipynb)
