@@ -66,6 +66,12 @@ Email: david.garcia@uni-konstanz.de
 - Privatdozent at ETH Zurich
 
 ---
+# Computer Science as a Social Science
+
+.center[![:scale 100%](figures/CSview.svg)]
+
+
+---
 
 # The Social Data Science Lab Konstanz
 
