@@ -1,5 +1,6 @@
 ---
-title: "Introduction to the </br>Social Data Science Lab"
+title: "Modelling Collective Behavior Online:</br>
+*Introduction to Social Data Science*"
 author: "David Garcia <br> *University of Konstanz*"
 date: "05.08.2024"
 output:
