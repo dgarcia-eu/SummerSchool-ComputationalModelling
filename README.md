@@ -29,8 +29,8 @@
 
 # 3. Exercise: Granovetter's model
 
-- [**Assginment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/10_Exercise_Granovetter/10_Granovetter.html)
-- [**Assginment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/10_Exercise_Granovetter/10_Granovetter.Rmd)
+- [**Assignment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/10_Exercise_Granovetter/10_Granovetter.html)
+- [**Assignment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/10_Exercise_Granovetter/10_Granovetter.Rmd)
 - [**Version of the model and analysis in Python with Mesa**](https://github.com/dgarcia-eu/ComputationalModellingSocialSystems/blob/main/Exercise_02_Granovetter/granovetter-example-solution.ipynb)
 
 
@@ -51,16 +51,18 @@
 
 # 5. Exercise: Bounded Confidence
 
-- [**Assginment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/11_Exercise_BoundedConfidence/11_BoundedConfidence.html)
-- [**Assginment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/11_Exercise_BoundedConfidence/11_BoundedConfidence.Rmd)
+- [**Assignment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/11_Exercise_BoundedConfidence/11_BoundedConfidence.html)
+- [**Assignment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/11_Exercise_BoundedConfidence/11_BoundedConfidence.Rmd)
 - [**Version of the model and analysis in Python with Mesa**](https://github.com/dgarcia-eu/ComputationalModellingSocialSystems-Solutions/blob/master/Exercise_03_BoundedConfidence/bounded-confidence-handout-solution.ipynb)
 
-# 6. Exercise: Information Accumulation Systems
+# 6. Exercise: Information Accumulation System
 
+- [**Assignment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/12_Exercise_IAS/12_IAS.html)
+- [**Assignment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/12_Exercise_IAS/12_IAS.Rmd)
 
 
 # 7. Exercise: Schelling's model
 
-- [**Assginment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/13_Exercise_Schelling/13_Schelling.html)
-- [**Assginment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/13_Exercise_Schelling/13_Schelling.Rmd)
+- [**Assignment (HTML)**](https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/13_Exercise_Schelling/13_Schelling.html)
+- [**Assignment in R markdown**](https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/13_Exercise_Schelling/13_Schelling.Rmd)
 - [**Version of the model and analysis in Python with Mesa**](https://github.com/dgarcia-eu/ComputationalModellingSocialSystems/blob/main/Exercise_01_Schelling/schelling-example-solution.ipynb)

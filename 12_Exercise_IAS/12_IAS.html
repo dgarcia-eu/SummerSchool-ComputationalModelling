@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Dr. David Garcia" />
 
 
-<title>README</title>
+<title>Information Accumulation System</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -348,125 +349,81 @@ display: none;
 
 
 
+<h1 class="title toc-ignore">Information Accumulation System</h1>
+<h4 class="author">Dr. David Garcia</h4>
 
 </div>
 
 
-<div id="introduction-to-the-social-data-science-lab" class="section level1">
-<h1>1. Introduction to the Social Data Science Lab</h1>
-<p><a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/00_IntroSDS/">[Slides]</a></p>
+<div id="tasks" class="section level1">
+<h1>Tasks</h1>
+<ol style="list-style-type: decimal">
+<li><p>Code the IAS model</p></li>
+<li><p>Generate cases of consensus and polarization</p></li>
+<li><p>Analyze tipping diffusivity and possibility of
+polarization</p></li>
+</ol>
 </div>
-<div id="principles-of-agent-based-modeling" class="section level1">
-<h1>2. Principles of agent-based modeling</h1>
-<ul>
-<li><strong>Basics of agent-based modelling.</strong> <a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/01_Introduction/">[Slides]</a></li>
-<li><strong>Collective action: Granovetter’s threshold model.</strong>
-<a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/03_CollectiveAction">[Slides]</a></li>
-<li><strong>Modelling segregation: Schelling’s model.</strong> <a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/02_Segregation">[Slides]</a></li>
-</ul>
-<p><strong>Recommended Readings:</strong></p>
-<ul>
-<li><a href="https://journals.sagepub.com/doi/abs/10.1177/1088868306294789">Agent-Based
-Modeling: A New Approach for Theory Building in Social Psychology. Eliot
-Smith and Frederica Conrey. Personality and Social Psychology Review,
-2007.</a></li>
-<li><a href="https://psycnet.apa.org/record/1987-04005-001">The matching
-hypothesis reexamined. Michael Kalick and Thomas Hamilton. Journal of
-Personality and Social Psychology, 1986.</a></li>
-<li><a href="https://www.uzh.ch/cmsssl/suz/dam/jcr:00000000-68cb-72db-ffff-ffffff8071db/04.02%7B_%7Dschelling%7B_%7D71.pdf">Dynamic
-Models of Segregation. Thomas Schelling. Journal of Mathematical
-Sociology, 1971 (pages 143 to 166)</a></li>
-<li><a href="https://www.jstor.org/stable/2778111">Threshold Models of
-Collective Behavior. Mark Granovetter. American Journal of Sociology
-(1978)</a></li>
-</ul>
-<p><strong>Additional readings:</strong></p>
-<ul>
-<li><a href="https://www.annualreviews.org/doi/abs/10.1146/annurev.soc.012809.102632">Causal
-Mechanisms in the Social Sciences. Peter Hedström and Petri Ylikoski.
-Annual Review of Sociology, 2010.</a></li>
-<li><a href="https://www.annualreviews.org/doi/abs/10.1146/annurev.soc.28.110601.141117">From
-factors to actors: Computational Sociology and Agent-Based Modeling.
-Michael Macy and Robert Willer. Annual Review of Sociology,
-2002.</a></li>
-<li><a href="https://royalsocietypublishing.org/doi/10.1098/rsos.160059">The
-dynamics of emotions in online interaction. David Garcia, Arvid Kappas,
-Dennis Küster and Frank Schweitzer. Royal Society Open Science
-(2016)</a></li>
-<li><a href="https://web.stanford.edu/class/sts145/Library/life.pdf">The
-fantastic combinations of John Conway’s new solitaire game “life”.
-Martin Gardner. Scientific American, 1970</a></li>
-</ul>
+<div id="code-the-ias-model" class="section level1">
+<h1>1. Code the IAS model</h1>
+<p>Set up the model with 100 agents of each community. Overall
+diffusivity is parametrized as omega and intra-community versus
+inter-community connectivity are parametrized by integers that determine
+the number of peers of the opinion update for each community. Set up
+lambda (relaxation) to a low value. A convergence parameter allows to
+stop the simulation when changes are small.</p>
+<pre class="r"><code>N &lt;- 100
+omega &lt;- 0.01 # General diffusivity per link
+intra &lt;- 10 # Intra-community connectivity: agents interact with 10 random agents of their same community
+inter &lt;- 3 # Inter-community connectivity: agents interact with 3 random agents of the other community
+lambda &lt;- 0.1 # Relaxation parameter
+
+convergence &lt;- 0.001</code></pre>
+<p>Code a function that runs one simulation of the IAS model. Keep track
+of the total change for each iteration over all agents and if the total
+change is below the convergence parameter, stop the simulation. Return
+the mean opinion of each community as a vector or a data frame.</p>
+<pre class="r"><code>IAS &lt;- function(N = 100, omega = 0.01, intra = 10, inter = 3, lambda = 0.1, convergence = 0.001)
+{
+  opinionX &lt;- runif(n=N, min=-1, max=1) 
+  opinionY &lt;- runif(n=N, min=-1, max=1) 
+  
+  # Your code here
+  
+  return(c(X=mean(opinionX), Y=mean(opinionY)))
+}</code></pre>
 </div>
-<div id="exercise-granovetters-model" class="section level1">
-<h1>3. Exercise: Granovetter’s model</h1>
-<ul>
-<li><a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/10_Exercise_Granovetter/10_Granovetter.html"><strong>Assignment
-(HTML)</strong></a></li>
-<li><a href="https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/10_Exercise_Granovetter/10_Granovetter.Rmd"><strong>Assignment
-in R markdown</strong></a></li>
-<li><a href="https://github.com/dgarcia-eu/ComputationalModellingSocialSystems/blob/main/Exercise_02_Granovetter/granovetter-example-solution.ipynb"><strong>Version
-of the model and analysis in Python with Mesa</strong></a></li>
-</ul>
+<div id="generate-cases-of-consensus-and-polarization" class="section level1">
+<h1>2. Generate cases of consensus and polarization</h1>
+<p>Simulate the case giving a “no opinion” state (intra=14, inter=4).
+Simulate a 100 times and visualize the distribution of results.</p>
+<pre class="r"><code>  # Your code here</code></pre>
+<p>Simulate the case giving a consensus state (intra=24, inter=8).
+Simulate a 100 times and visualize the distribution of results.</p>
+<pre class="r"><code>  # Your code here</code></pre>
+<p>Simulate the case in which polarization is possible (intra=44,
+inter=6). Simulate a 100 times and visualize the distribution of
+results. How often do you get a polarized outcome?</p>
+<pre class="r"><code>  # Your code here</code></pre>
 </div>
-<div id="opinion-dynamics" class="section level1">
-<h1>4. Opinion Dynamics</h1>
-<ul>
-<li><strong>Modelling cultural polarization: Axelrod’s model</strong> <a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/04_Culture">[Slides]</a></li>
-<li><strong>Opinion dynamics models</strong> <a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/05_OpinionDynamics">[Slides]</a></li>
-</ul>
-<p><strong>Readings:</strong></p>
-<ul>
-<li><a href="https://journals.sagepub.com/doi/pdf/10.1177/0022002797041002001">The
-Dissemination of Culture: A Model with Local Convergence and Global
-Polarization. Robert Axelrod, Journal of Conflict Resolution 41(20),
-1997</a></li>
-<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0219525900000078">Mixing
-beliefs among interacting agents. Guillaume Deffuant, David Neau,
-Frederic Amblard and Gerard Weisbuch. Advances in Complex Systems
-(2000)</a></li>
-</ul>
-<p><strong>Additional readings:</strong></p>
-<ul>
-<li><a href="https://www.worldscientific.com/doi/abs/10.1142/S0219525913500379">Measuring
-cultural dynamics through the Eurovision song contest. David Garcia and
-Dorian Tanase. Advances in Complex Systems, 16 (2013)</a></li>
-<li><a href="https://iopscience.iop.org/article/10.1088/1742-5468/2010/06/P06005">Tipping
-diffusivity in information accumulation systems: more links, less
-consensus. Jae K Shin and Jan Lorenz Journal of Statistical Mechanics:
-Theory and Experiment (2010)</a></li>
-</ul>
-</div>
-<div id="exercise-bounded-confidence" class="section level1">
-<h1>5. Exercise: Bounded Confidence</h1>
-<ul>
-<li><a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/11_Exercise_BoundedConfidence/11_BoundedConfidence.html"><strong>Assignment
-(HTML)</strong></a></li>
-<li><a href="https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/11_Exercise_BoundedConfidence/11_BoundedConfidence.Rmd"><strong>Assignment
-in R markdown</strong></a></li>
-<li><a href="https://github.com/dgarcia-eu/ComputationalModellingSocialSystems-Solutions/blob/master/Exercise_03_BoundedConfidence/bounded-confidence-handout-solution.ipynb"><strong>Version
-of the model and analysis in Python with Mesa</strong></a></li>
-</ul>
-</div>
-<div id="exercise-information-accumulation-system" class="section level1">
-<h1>6. Exercise: Information Accumulation System</h1>
-<ul>
-<li><a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/12_Exercise_IAS/12_IAS.html"><strong>Assignment
-(HTML)</strong></a></li>
-<li><a href="https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/12_Exercise_IAS/12_IAS.Rmd"><strong>Assignment
-in R markdown</strong></a></li>
-</ul>
-</div>
-<div id="exercise-schellings-model" class="section level1">
-<h1>7. Exercise: Schelling’s model</h1>
-<ul>
-<li><a href="https://dgarcia-eu.github.io/SummerSchool-ComputationalModelling/13_Exercise_Schelling/13_Schelling.html"><strong>Assignment
-(HTML)</strong></a></li>
-<li><a href="https://raw.githubusercontent.com/dgarcia-eu/SummerSchool-ComputationalModelling/main/13_Exercise_Schelling/13_Schelling.Rmd"><strong>Assignment
-in R markdown</strong></a></li>
-<li><a href="https://github.com/dgarcia-eu/ComputationalModellingSocialSystems/blob/main/Exercise_01_Schelling/schelling-example-solution.ipynb"><strong>Version
-of the model and analysis in Python with Mesa</strong></a></li>
-</ul>
+<div id="analyze-tipping-diffusivity-and-possibility-of-polarization" class="section level1">
+<h1>3. Analyze tipping diffusivity and possibility of polarization</h1>
+<p>Code a function that takes a connectivity parameter and a diffusivity
+ratio and calculates the corresponding values of inter and intra. The
+function should simulate a given number of times and return the
+frequency of polarized results in the set of simulations. Consider a
+mean opinion within 0.01 of zero to be a “no opinion” state.</p>
+<pre class="r"><code>freqPol &lt;- function(connectivity, ratio, Nrep=100)
+{
+  # Your code here
+  return(Npol/Nrep)
+}</code></pre>
+<p>Set the diffusivity ratio to 0.1 and iterate over values of the total
+connectivity between 10 and 90, simulating 100 times each setul and
+recording the frequency of polarized outcomes. Do you observe
+polarization emerging when connectivity increases for a given
+diffusivity ratio?</p>
+<pre class="r"><code>  # Your code here</code></pre>
 </div>
 
 
