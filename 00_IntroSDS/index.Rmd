@@ -72,15 +72,20 @@ Email: david.garcia@uni-konstanz.de
 
 ---
 
-# Computer Science as a Social Science
-![](figures/CSview.svg)
----
-
 # Bridging Scientific Divides
 
 ![:scale 100%](figures/VennV2-A.svg)
+---
+
+
+# Avoiding Data Piñatas
+
+![Definition of data piñata from the [Urban Dictionary](https://www.urbandictionary.com/define.php?term=data%20pi%C3%B1ata)](figures/Pinata.png)
+
+Also known as kitchen-sink regression, garbage-in garbage-out, and post hoc storytelling. Some patterns will always come out with sufficient data, what matters is making sense of them.
 
 ---
+
 
 # Bridging Scientific Divides
 
@@ -93,6 +98,8 @@ Email: david.garcia@uni-konstanz.de
 ![:scale 100%](figures/VennV2-C.svg)
 
 
+---
+
 # From research to education
 
 .center[![:scale 95%](figures/TopicsResearchTeaching.svg)]
@@ -104,114 +111,21 @@ Email: david.garcia@uni-konstanz.de
 
 ![](figures/ColEmo.svg)
 
-- <div style="font-size:18pt"><span>
+- <div style="font-size:20pt"><span>
 <a href="https://link.springer.com/article/10.1140/epjb/e2010-00292-1"> An agent-based model of collective emotions in online communities. F. Schweitzer, D. Garcia. The European Physical Journal B (2010) </a>
 </span></div>  
 
-- <div style="font-size:18pt"><span>
+- <div style="font-size:20pt"><span>
 <a href="http://rsos.royalsocietypublishing.org/content/3/8/160059"> The Dynamics of Emotions in Online Interaction. D. Garcia, A. Kappas, D. Küster, F. Schweitzer. Royal Society Open Science (2016)  </a>
 </span></div>  
 
-- <div style="font-size:18pt"><span>
+---
+
+# Collective emotions on social media
+
+.center[![:scale 90%](figures/CollectiveEmotionsParis.svg)]
+<div style="font-size:18pt"><span>
 <a href="https://journals.sagepub.com/doi/full/10.1177/0956797619831964"> Collective Emotions and Social Resilience in the Digital Traces After a Terrorist Attack. D. Garcia, B. Rimé. Psychological Science (2019) </a>
-</span></div>  
-
----
-
-
-# Social Resilience of Online Communities
-
-
-.center[![](figures/SocialResilience.svg)]
-
-- <div style="font-size:18pt"><span>
-<a href="https://dl.acm.org/doi/10.1145/2512938.2512946"> 
-Social resilience in online communities: The autopsy of Friendster. David Garcia, Pavlin Mavrodiev, Frank Schweitzer. First ACM Conference on Online Social Networks (COSN) (2013)  </a>
-</span></div>  
-
-- <div style="font-size:18pt"><span>
-<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.151"> Understanding Popularity, Reputation, and Social Influence in the Twitter Society. David Garcia, Pavlin Mavrodiev, Daniele Casati, Frank Schweitzer. Policy & Internet 9, 3 (2017) </a>
-</span></div>  
-
----
-
-# Polarization and Culture in Eurovision
-
-.center[![](figures/Eurovision.svg)]
-
-<div style="font-size:18pt"><span>
-<a href="https://www.worldscientific.com/doi/abs/10.1142/S0219525913500379">Measuring cultural dynamics through the Eurovision song contest. David Garcia, Dorian Tanase. Advances in Complex Systems (2013) 
-  </a>
-</span></div>  
----
-
-# Complex Privacy and Shadow Profiles
-
-.center[![](figures/Privacy.svg)]
-
-- <div style="font-size:18pt"><span>
-<a href="http://advances.sciencemag.org/content/3/8/e1701172.full"> Leaking privacy and shadow profiles in online social networks. David Garcia. Science Advances (2017) </a>
-</span></div>  
-
-- <div style="font-size:18pt"><span>
-<a href="https://epjdatascience.springeropen.com/articles/10.1140/epjds/s13688-018-0130-3">
-Collective aspects of privacy in the Twitter social network.David Garcia, Mansi Goel, Amod Agrawal, Ponnurangam Kumaraguru. EPJ Data Science (2018)  </a>
-</span></div>  
-
----
-
-# Gender Inequality in Online Media
-
-.center[![:scale 95%](figures/Gender.svg)]
-
-- <div style="font-size:18pt"><span>
-<a href="https://aaai.org/papers/00131-14522-gender-asymmetries-in-reality-and-fiction-the-bechdel-test-of-social-media/"> Gender Asymmetries in Reality and Fiction: The Bechdel Test of Social Media. D. Garcia, I. Weber, K. Garimella. ICWSM (2014)  </a>
-</span></div>  
-
-- <div style="font-size:18pt"><span>
-<a href="https://ojs.aaai.org/index.php/ICWSM/article/view/14628"> It's a Man's Wikipedia? Assessing Gender Inequality in an Online Encyclopedia. C. Wagner, . Garcia, M. Jadidi, M. Strohmaier. ICWSM (2015). </a>
-</span></div>  
-
-- <div style="font-size:18pt"><span>
-<a href="https://www.pnas.org/doi/10.1073/pnas.1717781115"> Analyzing gender inequality through large-scale Facebook advertising data. D. Garcia, Y. Kassa, A. Cuevas, M. Cebrian, E. Moro, I. Rahwan, R. Cuevas. PNAS (2018) </a>
-</span></div>  
-
----
-
-
-# Politics on Social Media
-
-.center[![:scale 90%](figures/Politics.svg)]
-- <div style="font-size:17pt"><span>
-<a href="https://www.nature.com/articles/s41562-023-01691-w"> 
-From alternative conceptions of honesty to alternative facts in communications by US politicians. J. Lasser, S. Aroyehun, F. Carrella, A. Simchon, D. Garcia, S. Lewandowsky. Nat. Human Behavior (2023) </a>
-</span></div>  
-
-- <div style="font-size:17pt"><span>
-<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.82"> Ideological and Temporal Components of Network Polarization in Online Political Participatory Media. D. Garcia, A. Abisheva, S. Schweighofer, U. Serdült, F. Schweitzer. Policy & Internet (2015)</a>
-</span></div> 
-
----
-
-# Health and Polarization in Social Media
-
-![](figures/EATLancet.svg)
-<div style="font-size:18pt"><span>
-<a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)32526-7/fulltext"> EATLancet vs yes2meat: the digital backlash to the planetary health diet. D. Garcia, V. Galaz, S. Daume. The Lancet (2019)  </a>
-</span></div>  
-
----
-
-# Modelling Issue Alignment
-
-.center[![:scale 96%](figures/Hyperpolarization.svg)]
-- <div style="font-size:18pt"><span>
-<a href="https://jasss.soc.surrey.ac.uk/23/3/5.html"> A Weighted Balance Model of Opinion Hyperpolarization.  S. Schweighofer, F. Schweitzer, D. Garcia. Journal of Artificial Societies and Social Simulation (2020) 
- </a>
-</span></div>  
-
-- <div style="font-size:18pt"><span>
-<a href="https://www.jasss.org/27/1/15.html"> Raising the Spectrum of Polarization: Generating Issue Alignment with a Weighted Balance Opinion Dynamics Model. S. Schweighofer, D. Garcia. JASSS (2024) </a>
 </span></div>  
 
 ---
@@ -239,16 +153,136 @@ From alternative conceptions of honesty to alternative facts in communications b
 
 
 ---
-# GABM: ABM + LLM
+
+
+
+
+# Social Resilience of Online Communities
+
+.center[![](figures/SocialResilience.svg)]
+
+- <div style="font-size:18pt"><span>
+<a href="https://dl.acm.org/doi/10.1145/2512938.2512946"> 
+Social resilience in online communities: The autopsy of Friendster. David Garcia, Pavlin Mavrodiev, Frank Schweitzer. First ACM Conference on Online Social Networks (COSN) (2013)  </a>
+</span></div>  
+
+- <div style="font-size:18pt"><span>
+<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/poi3.151"> Understanding Popularity, Reputation, and Social Influence in the Twitter Society. David Garcia, Pavlin Mavrodiev, Daniele Casati, Frank Schweitzer. Policy & Internet 9, 3 (2017) </a>
+</span></div>  
+
+---
+
+# Health and Polarization in Social Media
+
+![](figures/EATLancet.svg)
+<div style="font-size:18pt"><span>
+<a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)32526-7/fulltext"> EATLancet vs yes2meat: the digital backlash to the planetary health diet. D. Garcia, V. Galaz, S. Daume. The Lancet (2019)  </a>
+</span></div>  
+
+---
+
+# Modelling Issue Alignment
+
+.center[![:scale 96%](figures/Hyperpolarization.svg)]
+- <div style="font-size:18pt"><span>
+<a href="https://jasss.soc.surrey.ac.uk/23/3/5.html"> A Weighted Balance Model of Opinion Hyperpolarization.  S. Schweighofer, F. Schweitzer, D. Garcia. Journal of Artificial Societies and Social Simulation (2020) 
+ </a>
+</span></div>  
+
+- <div style="font-size:18pt"><span>
+<a href="https://www.jasss.org/27/1/15.html"> Raising the Spectrum of Polarization: Generating Issue Alignment with a Weighted Balance Opinion Dynamics Model. S. Schweighofer, D. Garcia. JASSS (2024) </a>
+</span></div>  
+
+---
+
+
+# Models in Machine Learning
+
+A machine learning model is a predictor for unseen data
+$$ h_n: \mathbb R^d \rightarrow \mathbb R $$
+
+Fitting: minimize training risk (error) based on loss function $l$
+$$ \frac{1}{n} \sum_{i=1}^n l(h(x_i),y_i) $$
+
+Machine Learning aims to minimize **test risk**: same mean loss over an unseen test dataset from the same population as the training dataset
+
+The **capacity** of $\mathcal H$ measures how large is the family that a model belongs to. It is often approximated as the **number of parameters** of $h_n$.
+
+---
+
+# Bias-Variance tradeoff
+.center[![:scale 65%](figures/Overfit.png)]
+Bias: underfitting (min. training risk), Variance: overfitting (min. test risk)
+---
+
+# The double descent
+.center[![:scale 100%](figures/Overparametrize.png)]
+[Reconciling modern machine-learning practice and the classical bias–variance trade-off. Mikhail Belkin, Daniel Hsu, Siyuan Ma, and Soumik Mandal (2019)](https://www.pnas.org/doi/10.1073/pnas.1903070116)
+
+---
+
+
+# Occam's razor?
+
+.center[*"The simplest explanation is usually the best one."*]
+
+What if a simple model is not necessarily the one with the fewer parameters?
+
+$l_2$ norm, also known as Euclidean norm:
+$$l_2 = \sum_j^P x_j^2$$
+- A model with more parameters could generalize better if their $l_2$ norm is smaller than models with less parameters
+
+- Does the $l_2$ norm also decrease in the second descent?
+
+---
+
+## Double descent example (MNIST) with NN and RF
+
+.pull-left[
+![:scale 95%](figures/RNN.png)
+]
+
+.pull-right[
+![](figures/RF.png)
+]
+
+---
+
+# Norm in RFF for MNIST
+.center[![:scale 88%](figures/RFF2.png)]
+
+---
+
+.center[![:scale 90%](figures/overfittingMeme.png)]
+
+---
+
+# Caveats and opportunities
+
+- **Beware of overselling of large models**
+
+- The double descent exists in some problems but it is far from true that it exists in all problems
+
+- Overparametrization requires evidence
+  - Careful construction and handling of test samples
+  - Out-Of-Domain (OOD) tests
+  - If possible: analysis of performance as a function of model size
+
+- **Could Large Language Models (LLMs) work as an interpolation of human behavior in text-based communication?**
+
+
+---
+
+
+## From Description to Prescription: ABM + LLM
 
 ![:scale 100%](figures/LLMABM.png)
 
 ---
 
-## This week: Computational Modelling of Social Systems
+## Agenda: Computational Modelling of Social Systems
 
 - Introduction to Agent-Based Modelling for collective behavior
-  - Modeling segregation
   - Modelling collective action
 - How to code ABM: first example
   - Granovetter's collective action model
