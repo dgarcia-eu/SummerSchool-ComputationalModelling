@@ -66,12 +66,6 @@ Email: david.garcia@uni-konstanz.de
 - Privatdozent at ETH Zurich
 
 ---
-# Computer Science as a Social Science
-
-.center[![:scale 100%](figures/CSview.svg)]
-
-
----
 
 # The Social Data Science Lab Konstanz
 
@@ -107,6 +101,11 @@ Also known as kitchen-sink regression, garbage-in garbage-out, and post hoc stor
 
 ---
 
+# Computer Science as a Social Science
+
+.center[![:scale 100%](figures/CSview.svg)]
+
+---
 # From research to education
 
 .center[![:scale 95%](figures/TopicsResearchTeaching.svg)]
