@@ -78,7 +78,7 @@ knitr::include_graphics("Figures/BankRun.jpg")
 
 ## Complex social beaviors: Activation and inhibition
 
-```{r, echo=FALSE, out.width=900, fig.align='center'}
+```{r, echo=FALSE, out.width=850, fig.align='center'}
 knitr::include_graphics("Figures/Crowd.jpg")
 ```
 
@@ -234,8 +234,25 @@ knitr::include_graphics("Figures/Interdisciplinarity.svg")
 
   - Dates with both agents accepting form a couple and leave the dating pool
 
+---
+
+## Preference: Probability of accepting date partner
+
+- Setting: 1000 male and female agents, $A_p$, $A_o$ attractiveness from 1 to 10
+- **Preference for an attractive partner:**
+
+$$P_1 =  \frac{(A_p)^3}{1000}$$
 
 
+- **Preference for a similar partner:**
+
+
+$$P_2 = \frac{(10 - | A_o -A_p |)^3}{1000}  $$
+
+
+- Correction: preferences become more uniform as time passes: date number $d$
+
+$$ P_c = P^{\left(\frac{51-d}{50}\right)} $$
 ---
 
 # Model metrics
