@@ -1,5 +1,5 @@
 ---
-title: "Basics of spreading: Granovetter's threshold model"
+title: "Collective Action: Granovetter's threshold model"
 author: "David Garcia, University of Konstanz"
 date: "Computational Modelling of Social Systems"
 output:
@@ -177,7 +177,7 @@ Assumption: the decision to join the collective action depends on:
 
 ---
 
-# An example of spreading
+# An example of spreading towards collective action
 
 <iframe width="1040" height="500" src="https://www.youtube.com/embed/GA8z7f7a2Pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
