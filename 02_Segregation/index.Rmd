@@ -39,119 +39,27 @@ layout: true
 
 # Overview
 
-## 1. Cellular Automata: The game of life
+## 1. Segregation
 
-## 2. Segregation
+## 2. Schelling's segregation model
 
-## 3. Schelling's segregation model
+## 3. Analyzing Schelling's model
 
-## 4. Analyzing Schelling's model
+## 4. Cellular Automata: The game of life
 
----
-
-
-# Cellular Automata: The game of life
-
-## *1. Cellular Automata: The game of life*
-
-## 2. Segregation
-
-## 3. Schelling's segregation model
-
-## 4. Analyzing Schelling's model
-
----
-
-# Cellular Automata
-
-- agents $\equiv$ cells, arranged on a predefined lattice
-- formal structure of Cellular Automata
-  - finite or infinite grid of identical cells $i=1,...,L$
-  - cell with internal state $\theta_{i} (t) \in \{\theta_1,\dots, \theta_n \}$
-  - neighborhood configuration: $\beta_{i}(t)\in\{\beta_1,\ldots,\beta_m\}$ 
-  - discrete dynamics for the state variable at $t+1$ :
-    $$\theta_{i}(t+1)=\mathbf{F}\left[\underline{\theta}(t),\underline{\beta}(t)\right]$$
-- characteristics: 
-  - discrete space, time, and states
-  - same transition rule applies to all cells
-  - *each* cell is an agent (!)
-
----
-
-
-# Cellspace and Neighbourhoods
-- Many types of neighbourhoods possible.
-- Examples in 2D:
-```{r, echo=FALSE, out.width=800, fig.align='center'}
-knitr::include_graphics("Figures/neigh.png")
-```
-- Finite cellspace L $\rightarrow$ border cells need different update rule
-  - option 1: mirror border cells 
-  - option 2: periodic boundary condition: A Torus
-- Not only squares, but also triangular, hexagonal and even irregular tilings possible (e.g. Voronoi tesselations)
-
----
-
-# Conway's Game of Life
-
-- History
-  - **John Conway** (1970): design a self-replicating system 
-  - 2010: first self-replicating structure in *Life*, called *Gemini*
-  - 2013: first replicator that creates a bigger copy of itself (self-similarity)
-- Rules of the Game
-  - 2D rectangular infinite grid with "dead" and "alive" cells
-  - a dead cell becomes alive if 3 neighbours are alive - **reproduction**
-  - an alive cell dies if less than 2 neighbours are alive - **underpopulation**
-  - an alive cell dies if more than 3 neighbours  are alive - **overcrowding**
-- Importance of Conway's Game of Life
-  - complex behaviour emerges from simple rules for agents
-  - early modeling of self-organization
-
-To play the game: https://playgameoflife.com
-
----
-
-#Simulating the Game of Life
-
-Dead cells are white, alive cells are black: 
-
-```{r, echo=FALSE, out.width=800, fig.align='center'}
-knitr::include_graphics("Figures/game-of-life.png")
-```
-
-
----
-background-image: url(Figures/GolEx.svg)
-background-size: 98%
-#Evolution of structures
-
-- still lifes: static patterns (e.g. 'beehive')
-
-- oscillators: repeating patterns
-
-- spaceships: translating patterns (e.g. 'glider')
-
-- guns: stationary patterns which emit spaceships
-
-- puffers: translating patterns which leave a trail of debris behind
-
-- the Gemini replicator: http://youtu.be/A8B5MbHPlH0
- 
-A whole library of structures is available at https://playgameoflife.com/lexicon
-
-You can even setup Game of Life in the Game of life: http://youtu.be/xP5-iIeKXE8
 
 ---
 
 # Segregation
 
-## 1. Cellular Automata: The game of life
+## *1. Segregation*
 
-## *2. Segregation*
+## 2. Schelling's segregation model
 
-## 3. Schelling's segregation model
+## 3. Analyzing Schelling's model
 
-## 4. Analyzing Schelling's model
+## 4. Cellular Automata: The game of life
+
 
 
 
@@ -194,13 +102,14 @@ knitr::include_graphics("Figures/DC.png")
 
 # Schelling's segregation model
 
-## 1. Cellular Automata: The game of life
+## 1. Segregation
 
-## 2. Segregation
+## *2. Schelling's segregation model*
 
-## *3. Schelling's segregation model*
+## 3. Analyzing Schelling's model
 
-## 4. Analyzing Schelling's model
+## 4. Cellular Automata: The game of life
+
 
 ---
 
@@ -387,108 +296,16 @@ http://nifty.stanford.edu/2014/mccown-schelling-model-segregation/
 ---
 
 
-# Low intolerance case
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/20.png")
-```
-]
-
-.pull-right[
-
-- $F=0.2$
-
-- Result very similar to initial configuration
-
-- No apparent segregation
-
-- All agents satisfied soon
-
-]
-
----
-
-
-# High intolerance case
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/60.png")
-```
-]
-
-.pull-right[
-
-- $F=0.6$
-
-- Result is very segregated
-
-- Empty cells form borders between clusters
-
-- Several iterations are necessary for all agents to be satisfied
-
-]
-
----
-
-
-
-# 0.5 intolerance case
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/50.png")
-```
-]
-
-.pull-right[
-
-- $F=0.5$
-
-- Result is substantially segregated
-
-- Empty cells form borders between clusters
-
-- Several iterations are necessary for all agents to be satisfied
-
-]
-
----
-
-
-# 0.4 intolerance case
-
-.pull-left[
-```{r, echo=FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("Figures/40.png")
-```
-]
-
-.pull-right[
-
-- $F=0.4$
-
-- Result is also segregated
-
-- **Agents are OK living in minority!**
-
-- All agents can be satisfied
-
-
-]
-
----
-
 # Analyzing Schelling's model
 
-## 1. Cellular Automata: The game of life
+## 1. Segregation
 
-## 2. Segregation
+## 2. Schelling's segregation model
 
-## 3. Schelling's segregation model
+## *3. Analyzing Schelling's model*
 
-## *4. Analyzing Schelling's model*
+## 4. Cellular Automata: The game of life
+
 
 ---
 
@@ -529,6 +346,99 @@ knitr::include_graphics("Figures/IvsF.png")
 - Substantial segregation for F>0.33
 
 ]
+
+---
+
+# Cellular Automata: The game of life
+
+## 1. Segregation
+
+## 2. Schelling's segregation model
+
+## 3. Analyzing Schelling's model
+
+## *4. Cellular Automata: The game of life*
+
+---
+
+# Cellular Automata
+
+- agents $\equiv$ cells, arranged on a predefined lattice
+- formal structure of Cellular Automata
+  - finite or infinite grid of identical cells $i=1,...,L$
+  - cell with internal state $\theta_{i} (t) \in \{\theta_1,\dots, \theta_n \}$
+  - neighborhood configuration: $\beta_{i}(t)\in\{\beta_1,\ldots,\beta_m\}$ 
+  - discrete dynamics for the state variable at $t+1$ :
+    $$\theta_{i}(t+1)=\mathbf{F}\left[\underline{\theta}(t),\underline{\beta}(t)\right]$$
+- characteristics: 
+  - discrete space, time, and states
+  - same transition rule applies to all cells
+  - *each* cell is an agent (!)
+
+---
+
+
+# Cellspace and Neighbourhoods
+- Many types of neighbourhoods possible.
+- Examples in 2D:
+```{r, echo=FALSE, out.width=800, fig.align='center'}
+knitr::include_graphics("Figures/neigh.png")
+```
+- Finite cellspace L $\rightarrow$ border cells need different update rule
+  - option 1: mirror border cells 
+  - option 2: periodic boundary condition: A Torus
+- Not only squares, but also triangular, hexagonal and even irregular tilings possible (e.g. Voronoi tesselations)
+
+---
+
+# Conway's Game of Life
+
+- History
+  - **John Conway** (1970): design a self-replicating system 
+  - 2010: first self-replicating structure in *Life*, called *Gemini*
+  - 2013: first replicator that creates a bigger copy of itself (self-similarity)
+- Rules of the Game
+  - 2D rectangular infinite grid with "dead" and "alive" cells
+  - a dead cell becomes alive if 3 neighbours are alive - **reproduction**
+  - an alive cell dies if less than 2 neighbours are alive - **underpopulation**
+  - an alive cell dies if more than 3 neighbours  are alive - **overcrowding**
+- Importance of Conway's Game of Life
+  - complex behaviour emerges from simple rules for agents
+  - early modeling of self-organization
+
+To play the game: https://playgameoflife.com
+
+---
+
+#Simulating the Game of Life
+
+Dead cells are white, alive cells are black: 
+
+```{r, echo=FALSE, out.width=800, fig.align='center'}
+knitr::include_graphics("Figures/game-of-life.png")
+```
+
+
+---
+background-image: url(Figures/GolEx.svg)
+background-size: 98%
+#Evolution of structures
+
+- still lifes: static patterns (e.g. 'beehive')
+
+- oscillators: repeating patterns
+
+- spaceships: translating patterns (e.g. 'glider')
+
+- guns: stationary patterns which emit spaceships
+
+- puffers: translating patterns which leave a trail of debris behind
+
+- the Gemini replicator: http://youtu.be/A8B5MbHPlH0
+ 
+A whole library of structures is available at https://playgameoflife.com/lexicon
+
+You can even setup Game of Life in the Game of life: http://youtu.be/xP5-iIeKXE8
 
 ---
 
