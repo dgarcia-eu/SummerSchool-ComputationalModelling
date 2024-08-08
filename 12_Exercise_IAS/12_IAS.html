@@ -370,20 +370,20 @@ polarization</p></li>
 diffusivity is parametrized as omega and intra-community versus
 inter-community connectivity are parametrized by integers that determine
 the number of peers of the opinion update for each community. Set up
-lambda (relaxation) to a low value. A convergence parameter allows to
+delta (relaxation) to a low value. A convergence parameter allows to
 stop the simulation when changes are small.</p>
 <pre class="r"><code>N &lt;- 100
 omega &lt;- 0.01 # General diffusivity per link
 intra &lt;- 10 # Intra-community connectivity: agents interact with 10 random agents of their same community
 inter &lt;- 3 # Inter-community connectivity: agents interact with 3 random agents of the other community
-lambda &lt;- 0.1 # Relaxation parameter
+delta &lt;- 0.1 # Relaxation parameter
 
 convergence &lt;- 0.001</code></pre>
 <p>Code a function that runs one simulation of the IAS model. Keep track
 of the total change for each iteration over all agents and if the total
 change is below the convergence parameter, stop the simulation. Return
 the mean opinion of each community as a vector or a data frame.</p>
-<pre class="r"><code>IAS &lt;- function(N = 100, omega = 0.01, intra = 10, inter = 3, lambda = 0.1, convergence = 0.001)
+<pre class="r"><code>IAS &lt;- function(N = 100, omega = 0.01, intra = 10, inter = 3, delta = 0.1, convergence = 0.001)
 {
   opinionX &lt;- runif(n=N, min=-1, max=1) 
   opinionY &lt;- runif(n=N, min=-1, max=1) 
@@ -395,15 +395,17 @@ the mean opinion of each community as a vector or a data frame.</p>
 </div>
 <div id="generate-cases-of-consensus-and-polarization" class="section level1">
 <h1>2. Generate cases of consensus and polarization</h1>
-<p>Simulate the case giving a “no opinion” state (intra=14, inter=4).
-Simulate a 100 times and visualize the distribution of results.</p>
+<p>Simulate the case giving a “no opinion” state (delta=0.2, intra=14,
+inter=4). Simulate a 100 times and visualize the distribution of
+results.</p>
 <pre class="r"><code>  # Your code here</code></pre>
-<p>Simulate the case giving a consensus state (intra=24, inter=8).
-Simulate a 100 times and visualize the distribution of results.</p>
+<p>Simulate the case giving a consensus state (delta=0.2, intra=24,
+inter=8). Simulate a 100 times and visualize the distribution of
+results.</p>
 <pre class="r"><code>  # Your code here</code></pre>
-<p>Simulate the case in which polarization is possible (intra=44,
-inter=6). Simulate a 100 times and visualize the distribution of
-results. How often do you get a polarized outcome?</p>
+<p>Simulate the case in which polarization is possible (delta=0.2,
+intra=44, inter=6). Simulate a 100 times and visualize the distribution
+of results. How often do you get a polarized outcome?</p>
 <pre class="r"><code>  # Your code here</code></pre>
 </div>
 <div id="analyze-tipping-diffusivity-and-possibility-of-polarization" class="section level1">

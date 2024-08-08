@@ -15,14 +15,14 @@ output: html_document
 
 # 1. Code the IAS model
 
-Set up the model with 100 agents of each community. Overall diffusivity is parametrized as omega and intra-community versus inter-community connectivity are parametrized by integers that determine the number of peers of the opinion update for each community. Set up lambda (relaxation) to a low value. A convergence parameter allows to stop the simulation when changes are small.
+Set up the model with 100 agents of each community. Overall diffusivity is parametrized as omega and intra-community versus inter-community connectivity are parametrized by integers that determine the number of peers of the opinion update for each community. Set up delta (relaxation) to a low value. A convergence parameter allows to stop the simulation when changes are small.
 
 ```{r setup}
 N <- 100
 omega <- 0.01 # General diffusivity per link
 intra <- 10 # Intra-community connectivity: agents interact with 10 random agents of their same community
 inter <- 3 # Inter-community connectivity: agents interact with 3 random agents of the other community
-lambda <- 0.1 # Relaxation parameter
+delta <- 0.1 # Relaxation parameter
 
 convergence <- 0.001
 ```
@@ -30,7 +30,7 @@ convergence <- 0.001
 Code a function that runs one simulation of the IAS model. Keep track of the total change for each iteration over all agents and if the total change is below the convergence parameter, stop the simulation. Return the mean opinion of each community as a vector or a data frame.
 
 ```{r IAS}
-IAS <- function(N = 100, omega = 0.01, intra = 10, inter = 3, lambda = 0.1, convergence = 0.001)
+IAS <- function(N = 100, omega = 0.01, intra = 10, inter = 3, delta = 0.1, convergence = 0.001)
 {
   opinionX <- runif(n=N, min=-1, max=1) 
   opinionY <- runif(n=N, min=-1, max=1) 
@@ -45,20 +45,20 @@ IAS <- function(N = 100, omega = 0.01, intra = 10, inter = 3, lambda = 0.1, conv
 
 # 2. Generate cases of consensus and polarization
 
-Simulate the case giving a "no opinion" state (intra=14, inter=4). Simulate a 100 times and visualize the distribution of results.
+Simulate the case giving a "no opinion" state (delta=0.2, intra=14, inter=4). Simulate a 100 times and visualize the distribution of results.
 
 ```{r case00}
   # Your code here
 ```
 
-Simulate the case giving a consensus state (intra=24, inter=8). Simulate a 100 times and visualize the distribution of results.
+Simulate the case giving a consensus state (delta=0.2, intra=24, inter=8). Simulate a 100 times and visualize the distribution of results.
 
 ```{r case PP}
   # Your code here
 ```
 
 
-Simulate the case in which polarization is possible (intra=44, inter=6). Simulate a 100 times and visualize the distribution of results. How often do you get a polarized outcome?
+Simulate the case in which polarization is possible (delta=0.2, intra=44, inter=6). Simulate a 100 times and visualize the distribution of results. How often do you get a polarized outcome?
 
 ```{r case PN}
   # Your code here
